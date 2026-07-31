@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# dsa-30
 
-## Getting Started
+A personal, single-user, offline-first 30-day DSA revision tracker. 30 day-cards on a home grid;
+each day holds exactly 8 question slots plus a markdown notes pad.
 
-First, run the development server:
+**All content is user-supplied.** The app ships with 240 empty, pre-numbered slots — it never
+invents, suggests, or auto-fills a question. See [CLAUDE.md](./CLAUDE.md) for the full rules and
+[docs/plan.md](./docs/plan.md) for the original build spec.
+
+## Stack
+
+Next.js 16 (App Router) · TypeScript · Tailwind v4 · Zustand · react-markdown · lucide-react
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Filling in your questions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The fastest path for bulk entry is the CSV → generator script:
 
-## Learn More
+1. Open `intake-template.csv` in a spreadsheet and fill in `title` (optional if `url` is a
+   LeetCode/GFG link), `difficulty`, `url`, `pattern` for whichever `(day, slot)` rows you have.
+2. Run:
+   ```bash
+   node scripts/sheet-to-plan.mjs intake-template.csv
+   ```
+   This writes `src/data/plan.json`, matching rows into their `(day, slot)` slot. Re-running it
+   after adding more rows never renumbers or disturbs slots you already filled.
+3. Commit `src/data/plan.json`.
 
-To learn more about Next.js, take a look at the following resources:
+You can also fill slots from inside the running app (paste importer, inline slot editor, or
+"add extra question" on a day page) — those write to browser `localStorage` as overrides. Use
+**Settings → Export plan.json** to bring in-app edits back into this file for a permanent,
+version-controlled copy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command | What it does |
+|---|---|
+| `npm run dev` | Start the dev server |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint |
+| `node scripts/make-template.mjs` | Regenerate `intake-template.csv` (240 blank rows) |
+| `node scripts/sheet-to-plan.mjs <csv>` | Write CSV rows into `src/data/plan.json` |
 
-## Deploy on Vercel
+## Data model
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Two files, two lifetimes — see [CLAUDE.md](./CLAUDE.md#data-model) for the full schema:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/data/plan.json` — the syllabus. In Git, read-only at runtime.
+- localStorage `dsa-tracker:progress:v1` — ticks, stars, notes, and in-app overrides. Export it
+  from **Settings** regularly; it's one "Clear browsing data" away from gone.
