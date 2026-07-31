@@ -11,96 +11,96 @@
       "questions": [
         {
           "id": "d01-q01",
-          "title": "",
+          "title": "Minimum Total Cost To Process All Elements",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q02",
-          "title": "",
+          "title": "Filter Occupied Intervals",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/filter-occupied-intervals",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q03",
-          "title": "",
+          "title": "Minimum Lights To Illuminate A Road",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-lights-to-illuminate-a-road",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q04",
-          "title": "",
+          "title": "Minimum Energy To Maintain Brightness",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-energy-to-maintain-brightness",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q05",
-          "title": "",
+          "title": "Count Kth Roots In A Range",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-k-th-roots-in-a-range/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q06",
-          "title": "",
+          "title": "Sort Vowels By Frequency",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sort-vowels-by-frequency/description/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q07",
-          "title": "",
+          "title": "Integers With Multiple Sum Of Two Cubes",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/description/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q08",
-          "title": "",
+          "title": "Design Event Manager",
           "difficulty": "",
           "pattern": "",
           "tags": [],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/design-event-manager",
             "editorial": "",
             "video": ""
           }
