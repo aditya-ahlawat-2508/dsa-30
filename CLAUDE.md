@@ -1,10 +1,12 @@
 # dsa-30
 
 A personal, single-user, offline-first 30-day DSA revision tracker. 30 day-cards on a home grid.
-Slot count per day is **not uniform**: days 1–10 hold 10 question slots (a 100-question sprint),
-days 11–30 hold the original 8 slots each — 260 slots total. Each day also has a markdown notes
-pad. Slot count for a given day is read from `plan.days[day].questions.length`, never from a
-single global constant — no component or script may assume every day has the same number of slots.
+Slot count per day is **not uniform**: days 1–10 hold 10 slots (a 100-question sprint), days
+11–18 hold 9 slots (a 96-question batch, short of the ideal 10/day because the source mixed-topic
+pool only had 63 available questions), days 19–30 hold the original 8 slots each — 268 slots
+total. Each day also has a markdown notes pad. Slot count for a given day is read from
+`plan.days[day].questions.length`, never from a single global constant — no component or script
+may assume every day has the same number of slots.
 
 ## Non-negotiables
 
@@ -15,10 +17,11 @@ These are the rules that break the app if violated. Check every change against t
    e.g. screenshots of a real problem list). Slots ship empty until then. Do not populate a slot
    with an example, do not propose a curriculum, do not "helpfully" fill a blank with Two Sum.
    An empty slot is the correct state.
-2. **Question IDs are pre-allocated and immutable.** `d01-q01` … `d10-q10` for days 1–10, `d11-q01`
-   … `d30-q08` for days 11–30, zero-padded. Never derive an ID from array position. Never renumber.
-   Per-day slot count comes from `scripts/lib/csv-columns.mjs`'s `slotsForDay(day)` helper — update
-   it (and only it) if the per-day slot count ever needs to change again.
+2. **Question IDs are pre-allocated and immutable.** `d01-q01` … `d10-q10` (days 1–10), `d11-q01`
+   … `d18-q09` (days 11–18), `d19-q01` … `d30-q08` (days 19–30), zero-padded. Never derive an ID
+   from array position. Never renumber. Per-day slot count comes from
+   `scripts/lib/csv-columns.mjs`'s `slotsForDay(day)` helper — update it (and only it) if the
+   per-day slot count ever needs to change again.
 3. **Two files, two lifetimes.** `src/data/plan.json` is the syllabus (Git, read-only at
    runtime). localStorage `dsa-tracker:progress:v1` is progress. Progress fields must never be
    written into `plan.json`, and syllabus content must never be the only copy of something the

@@ -1,7 +1,9 @@
 export const CSV_COLUMNS = ["day", "slot", "title", "difficulty", "url", "pattern"];
 
 export function slotsForDay(day) {
-  return day <= 10 ? 10 : 8;
+  if (day <= 10) return 10;
+  if (day <= 18) return 9;
+  return 8;
 }
 
 export function parseCsvLine(line) {

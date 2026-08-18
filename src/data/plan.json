@@ -1476,101 +1476,131 @@
     },
     {
       "day": 11,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP Deep Dive",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d11-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Inverse Coin Change",
+          "difficulty": "Hard",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/inverse-coin-change/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Subarrays Where Max Element Appears at Least K Times",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Distribute Candies Among Children II",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/distribute-candies-among-children-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Eat Pizzas!",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/eat-pizzas/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Adjacent Elements With the Same Color",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Number of Ways to Place People I",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Amount of Time for Binary Tree to Be Infected",
+          "difficulty": "Hard",
+          "pattern": "Tree",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d11-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Power Grid Maintenance",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/power-grid-maintenance/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d11-q09",
+          "title": "Maximize Points After Choosing K Tasks",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/",
             "editorial": "",
             "video": ""
           }
@@ -1579,101 +1609,131 @@
     },
     {
       "day": 12,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP Deep Dive",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d12-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Unguarded Cells in the Grid",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-unguarded-cells-in-the-grid/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Remove Methods From Project",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/remove-methods-from-project/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Divide Intervals Into Minimum Number of Groups",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Construct the Minimum Bitwise Array II",
+          "difficulty": "Hard",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Perfect Pairs",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/number-of-perfect-pairs/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximize the Topmost Element After K Moves",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Number of Operations With the Same Score II",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d12-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find Minimum Time to Reach Last Room I",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d12-q09",
+          "title": "Minimum Number of Coins for Fruits",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimum-number-of-coins-for-fruits/",
             "editorial": "",
             "video": ""
           }
@@ -1682,101 +1742,131 @@
     },
     {
       "day": 13,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph Shortest Paths",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d13-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Rows Covered by Columns",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-rows-covered-by-columns/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find Maximum Number of Non Intersecting Substrings",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Sorting Three Groups",
+          "difficulty": "Hard",
+          "pattern": "Sorting",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sorting-three-groups/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count the Number of Fair Pairs",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-the-number-of-fair-pairs/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Alternating Groups II",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/alternating-groups-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "K Divisible Elements Subarrays",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/k-divisible-elements-subarrays/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Time to Visit Disappearing Nodes",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d13-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Visit Array Positions to Maximize Score",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/visit-array-positions-to-maximize-score/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d13-q09",
+          "title": "Count the Number of Complete Components",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/count-the-number-of-complete-components/",
             "editorial": "",
             "video": ""
           }
@@ -1785,101 +1875,131 @@
     },
     {
       "day": 14,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph Shortest Paths",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d14-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Sum of Prefix Scores of Strings",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sum-of-prefix-scores-of-strings/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximize Active Section with Trade I",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Reschedule Meetings for Maximum Free Time I",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Assign Elements to Groups with Constraints",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/assign-elements-to-groups-with-constraints/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Separate Squares I",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/separate-squares-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Extra Characters in a String",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/extra-characters-in-a-string/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Ways to Reach a Position After Exactly k Steps",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d14-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Number of Subsequences After One Inserting",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d14-q09",
+          "title": "Minimum XOR Path in a Grid",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
             "editorial": "",
             "video": ""
           }
@@ -1888,101 +2008,131 @@
     },
     {
       "day": 15,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Trees & DP",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d15-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Most Frequent Prime",
+          "difficulty": "Hard",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/most-frequent-prime/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Distinct Points Reachable After Substring Removal",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Moves to Balance Circular Array",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-moves-to-balance-circular-array/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Maximum Number of Elements in Subset",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Area Rectangle With Point Constraints I",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Mentions Per User",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-mentions-per-user/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find Closest Node to Given Two Nodes",
+          "difficulty": "Hard",
+          "pattern": "Tree",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-closest-node-to-given-two-nodes/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d15-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Subsequence After One Replacement",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/subsequence-after-one-replacement/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d15-q09",
+          "title": "All Ancestors of a Node in a Directed Acyclic Graph",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/",
             "editorial": "",
             "video": ""
           }
@@ -1991,101 +2141,131 @@
     },
     {
       "day": 16,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Trees & DP",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d16-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Design Memory Allocator",
+          "difficulty": "Hard",
+          "pattern": "Simulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/design-memory-allocator/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Removing Minimum Number of Magic Beans",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/removing-minimum-number-of-magic-beans/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count the Number of Computer Unlocking Permutations",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Split Array Into Maximum Number of Subarrays",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Array Length After Pair Removals",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-array-length-after-pair-removals/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Longest Nice Subarray",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/longest-nice-subarray/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Frog Jump II",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/frog-jump-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d16-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Design Graph With Shortest Path Calculator",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d16-q09",
+          "title": "Maximum Product of First and Last Elements of a Subsequence",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/",
             "editorial": "",
             "video": ""
           }
@@ -2094,101 +2274,131 @@
     },
     {
       "day": 17,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph Cycles & DAGs",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d17-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Choose K Elements With Maximum Sum",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/choose-k-elements-with-maximum-sum/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Impossible OR",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-impossible-or/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Lexicographically Largest String From the Box I",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Destroy Sequential Targets",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/destroy-sequential-targets/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find Indices With Index and Value Difference II",
+          "difficulty": "Hard",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Total Cost to Hire K Workers",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/total-cost-to-hire-k-workers/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Initial Strength to Defeat All Monsters",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d17-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Shortest Bridge",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/shortest-bridge/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d17-q09",
+          "title": "Best Time to Buy and Sell Stock V",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/",
             "editorial": "",
             "video": ""
           }
@@ -2197,101 +2407,131 @@
     },
     {
       "day": 18,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph Cycles & DAGs",
+      "goal": "6 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d18-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Deletions to Make String K-Special",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximize Score of Numbers in Ranges",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Sum of Matrix After Queries",
+          "difficulty": "Hard",
+          "pattern": "Queries",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sum-of-matrix-after-queries/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Reach End of Array With Max Score",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/reach-end-of-array-with-max-score/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Lexicographically Minimum String After Removing Stars",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find Longest Special Substring That Occurs Thrice II",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Detect Cycles in 2D Grid",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/detect-cycles-in-2d-grid/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d18-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Check if There is a Valid Partition For The Array",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d18-q09",
+          "title": "Pythagorean Distance Nodes in a Tree",
+          "difficulty": "Hard",
+          "pattern": "Tree",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/",
             "editorial": "",
             "video": ""
           }
@@ -2300,101 +2540,117 @@
     },
     {
       "day": 19,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP/Graph/Tree Revision",
+      "goal": "5 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d19-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum K to Sort a Permutation",
+          "difficulty": "Hard",
+          "pattern": "Sorting",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Make Number of Distinct Characters Equal",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/make-number-of-distinct-characters-equal/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Number of Good Pairs II",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-number-of-good-pairs-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Prime Subtraction Operation",
+          "difficulty": "Hard",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/prime-subtraction-operation/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Design a Food Rating System",
+          "difficulty": "Hard",
+          "pattern": "Simulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/design-a-food-rating-system/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Shortest Path With At Most K Consecutive Identical Characters",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Cost for Cutting Cake II",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d19-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Cost to Make All Characters Equal",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/",
             "editorial": "",
             "video": ""
           }
@@ -2403,101 +2659,117 @@
     },
     {
       "day": 20,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP/Graph/Tree Revision",
+      "goal": "5 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d20-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Number of Coins to be Added",
+          "difficulty": "Hard",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-number-of-coins-to-be-added/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Sliding Subarray Beauty",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sliding-subarray-beauty/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximize Amount After Two Days of Conversions",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Transform Array",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-transform-array/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Time to Break Locks I",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-time-to-break-locks-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Time to Reach Destination in Directed Graph",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Score Of Spliced Array",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-score-of-spliced-array/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d20-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Ways to Assign Edge Weights I",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/",
             "editorial": "",
             "video": ""
           }
@@ -2506,101 +2778,117 @@
     },
     {
       "day": 21,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP/Graph/Tree Revision",
+      "goal": "5 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d21-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Most Frequent IDs",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/most-frequent-ids/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Sum of Distances",
+          "difficulty": "Hard",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sum-of-distances/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Shifting Letters II",
+          "difficulty": "Hard",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/shifting-letters-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Number of Operations to Make X and Y Equal",
+          "difficulty": "Hard",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Moves to Capture The Queen",
+          "difficulty": "Hard",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-moves-to-capture-the-queen/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Longest Non-decreasing Subarray From Two Arrays",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Path with Maximum Probability",
+          "difficulty": "Hard",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/path-with-maximum-probability/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d21-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Amount of Money Robot Can Earn",
+          "difficulty": "Hard",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/",
             "editorial": "",
             "video": ""
           }
