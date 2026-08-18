@@ -4,6 +4,7 @@ import { plan } from "@/lib/plan";
 import { useHydrated } from "@/lib/useHydrated";
 import { TopNav } from "@/components/TopNav";
 import { GlobalProgress } from "@/components/GlobalProgress";
+import { StreakHeatmap } from "@/components/StreakHeatmap";
 import { DueForRevisionStrip } from "@/components/DueForRevisionStrip";
 import { DayCard } from "@/components/DayCard";
 import { GridSkeleton } from "@/components/Skeleton";
@@ -23,6 +24,7 @@ export default function Home() {
         ) : (
           <>
             <GlobalProgress />
+            <StreakHeatmap />
             <DueForRevisionStrip />
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {plan.days.map((day) => (

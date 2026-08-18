@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Download, Upload } from "lucide-react";
+import { Download, Upload, Send } from "lucide-react";
 import { useHydrated } from "@/lib/useHydrated";
 import { useProgressStore } from "@/store/useProgressStore";
 import { buildMergedPlanExport, buildIntakeCsv, triggerDownload, summarise } from "@/lib/exportImport";
@@ -9,13 +9,49 @@ import { TopNav } from "@/components/TopNav";
 import { Modal } from "@/components/Modal";
 import type { ProgressData } from "@/types";
 
+type ReminderSendState = "idle" | "sending" | "sent" | "skipped" | "error";
+
 export default function SettingsPage() {
   const hydrated = useHydrated();
   const progress = useProgressStore((s) => s.data);
   const replaceProgress = useProgressStore((s) => s.replaceProgress);
+  const setReminderEmail = useProgressStore((s) => s.setReminderEmail);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [pendingImport, setPendingImport] = useState<ProgressData | null>(null);
   const [importError, setImportError] = useState<string | null>(null);
+  const [reminderState, setReminderState] = useState<ReminderSendState>("idle");
+  const [reminderMessage, setReminderMessage] = useState<string | null>(null);
+
+  async function sendTestReminder() {
+    if (!progress.reminderEmail) {
+      setReminderState("error");
+      setReminderMessage("Enter an email address first.");
+      return;
+    }
+    setReminderState("sending");
+    setReminderMessage(null);
+    try {
+      // Always force-send for the test button — hasSolvedToday is what the
+      // real cron would pass, but a manual test should verify the pipeline
+      // works regardless of today's activity.
+      const res = await fetch("/api/reminder", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: progress.reminderEmail, hasSolvedToday: false }),
+      });
+      const json = await res.json();
+      if (!res.ok) {
+        setReminderState("error");
+        setReminderMessage(json.error ?? `Request failed (${res.status})`);
+        return;
+      }
+      setReminderState("sent");
+      setReminderMessage("Test email sent.");
+    } catch {
+      setReminderState("error");
+      setReminderMessage("Could not reach /api/reminder.");
+    }
+  }
 
   function exportPlan() {
     const merged = buildMergedPlanExport(progress);
@@ -124,6 +160,45 @@ export default function SettingsPage() {
                 </button>
               </div>
               {importError && <p className="text-xs text-rose-600 dark:text-rose-400">{importError}</p>}
+            </section>
+
+            <section className="flex flex-col gap-3 rounded-xl border border-card-border bg-card p-4">
+              <h2 className="text-sm font-semibold">Email reminders</h2>
+              <p className="text-xs text-muted">
+                A daily nudge if you haven&apos;t solved anything yet. Sending needs a small
+                server-side piece (a Resend API key and, for the daily cron, a Vercel deployment)
+                — see the README for setup. This address is stored only in this browser&apos;s
+                localStorage, never in Git.
+              </p>
+              <label className="flex flex-col gap-1 text-sm">
+                Reminder email
+                <input
+                  type="email"
+                  value={progress.reminderEmail}
+                  onChange={(e) => setReminderEmail(e.target.value)}
+                  placeholder="you@example.com"
+                  className="rounded-md border border-card-border bg-transparent px-2 py-1.5 text-sm outline-none focus:border-accent"
+                />
+              </label>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={sendTestReminder}
+                  disabled={reminderState === "sending"}
+                  className="flex items-center gap-1.5 rounded-md border border-card-border px-3 py-1.5 text-sm hover:bg-accent-tint disabled:opacity-50"
+                >
+                  <Send size={14} /> {reminderState === "sending" ? "Sending…" : "Send test email"}
+                </button>
+                {reminderMessage && (
+                  <span
+                    className={`text-xs ${
+                      reminderState === "error" ? "text-rose-600 dark:text-rose-400" : "text-muted"
+                    }`}
+                  >
+                    {reminderMessage}
+                  </span>
+                )}
+              </div>
             </section>
 
             <section className="rounded-xl border border-card-border bg-card p-4 text-xs text-muted">

@@ -7,6 +7,7 @@ import { plan } from "@/lib/plan";
 import { useHydrated } from "@/lib/useHydrated";
 import { useProgressStore } from "@/store/useProgressStore";
 import { displayedQuestionsForDay, type DisplayedQuestion } from "@/lib/merge";
+import { COARSE_BUCKETS, bucketForPattern, type CoarseBucket } from "@/lib/topicBuckets";
 import { TopNav } from "@/components/TopNav";
 import { DifficultyTag } from "@/components/DifficultyTag";
 import { StatusControl } from "@/components/StatusControl";
@@ -34,6 +35,7 @@ export default function BrowsePage() {
   const [dayMin, setDayMin] = useState(1);
   const [dayMax, setDayMax] = useState(30);
   const [fillState, setFillState] = useState<"all" | "empty" | "filled">("all");
+  const [topic, setTopic] = useState<CoarseBucket | "all">("all");
   const [search, setSearch] = useState("");
 
   const rows: Row[] = useMemo(() => {
@@ -46,6 +48,22 @@ export default function BrowsePage() {
     return all;
   }, [progress]);
 
+  // Topic buckets only mean something for filled slots — an empty slot has
+  // no pattern to classify, so it's excluded from both the counts and the
+  // filter rather than being force-fit into "Other".
+  const topicCounts = useMemo(() => {
+    const counts = new Map<CoarseBucket, number>();
+    for (const r of rows) {
+      if (r.isEmpty) continue;
+      const bucket = bucketForPattern(r.pattern);
+      counts.set(bucket, (counts.get(bucket) ?? 0) + 1);
+    }
+    return counts;
+  }, [rows]);
+
+  const allTopics: CoarseBucket[] = [...COARSE_BUCKETS, "Other"];
+  const topicOptions = allTopics.filter((b) => (topicCounts.get(b) ?? 0) > 0);
+
   const filtered = rows.filter((r) => {
     if (status !== "all" && r.status !== status) return false;
     if (difficulty !== "all" && r.difficulty !== difficulty) return false;
@@ -53,6 +71,9 @@ export default function BrowsePage() {
     if (r.day < dayMin || r.day > dayMax) return false;
     if (fillState === "empty" && !r.isEmpty) return false;
     if (fillState === "filled" && r.isEmpty) return false;
+    if (topic !== "all") {
+      if (r.isEmpty || bucketForPattern(r.pattern) !== topic) return false;
+    }
     if (search.trim()) {
       const needle = search.trim().toLowerCase();
       const haystack = `${r.title} ${r.pattern}`.toLowerCase();
@@ -65,7 +86,7 @@ export default function BrowsePage() {
     <>
       <TopNav />
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-4 p-4">
-        <h1 className="text-xl font-bold">Browse — all 240 slots</h1>
+        <h1 className="text-xl font-bold">Browse — all {rows.length} slots</h1>
 
         <div className="flex flex-wrap items-center gap-2 rounded-xl border border-card-border bg-card p-3">
           <input
@@ -105,6 +126,18 @@ export default function BrowsePage() {
             <option value="all">Empty + filled</option>
             <option value="filled">Filled only</option>
             <option value="empty">Empty only</option>
+          </select>
+          <select
+            value={topic}
+            onChange={(e) => setTopic(e.target.value as CoarseBucket | "all")}
+            className="rounded-md border border-card-border bg-transparent px-2 py-1.5 text-sm"
+          >
+            <option value="all">All topics</option>
+            {topicOptions.map((b) => (
+              <option key={b} value={b}>
+                {b} ({topicCounts.get(b)})
+              </option>
+            ))}
           </select>
           <label className="flex items-center gap-1.5 text-sm">
             <input type="checkbox" checked={starredOnly} onChange={(e) => setStarredOnly(e.target.checked)} />

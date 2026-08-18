@@ -2,6 +2,9 @@ import { create } from "zustand";
 import type { Difficulty, ProgressData, Question, QuestionProgress, QuestionStatus } from "@/types";
 import { LocalStorageStore, emptyProgressData, PROGRESS_SCHEMA_VERSION } from "@/lib/storage";
 import { DEFAULT_QUESTION_PROGRESS } from "@/lib/merge";
+import { markActive, checkAndApplyStreakFreeze } from "@/lib/streak";
+import { evaluateNewBadges } from "@/lib/badges";
+import { useToastStore } from "@/store/useToastStore";
 
 const store = new LocalStorageStore();
 const SAVE_DEBOUNCE_MS = 400;
@@ -63,10 +66,31 @@ interface ProgressStoreState {
     fields: Partial<Pick<Question, "title" | "difficulty" | "pattern">> & { url?: string }
   ) => void;
   replaceProgress: (data: ProgressData) => void;
+  setReminderEmail: (email: string) => void;
 }
 
 function getOrDefaultQuestion(data: ProgressData, id: string): QuestionProgress {
   return data.questions[id] ?? { ...DEFAULT_QUESTION_PROGRESS };
+}
+
+// Badges are re-checked after cycleStatus (the action that can move a streak
+// or solve count past a milestone) and once on hydrate — not on every
+// keystroke of setDayNote, which would run this on a hot path for no reason.
+function applyEarnedBadges(data: ProgressData): ProgressData {
+  const newlyEarned = evaluateNewBadges(data);
+  if (newlyEarned.length === 0) return data;
+
+  const now = new Date().toISOString();
+  const earnedBadges = { ...data.earnedBadges };
+  for (const badge of newlyEarned) {
+    earnedBadges[badge.id] = now;
+    useToastStore.getState().push({
+      title: `Badge earned: ${badge.name}`,
+      description: badge.description,
+      icon: "badge",
+    });
+  }
+  return { ...data, earnedBadges };
 }
 
 export const useProgressStore = create<ProgressStoreState>((set, get) => ({
@@ -75,7 +99,21 @@ export const useProgressStore = create<ProgressStoreState>((set, get) => ({
 
   hydrate: async () => {
     const loaded = await store.load();
-    set({ data: loaded, hydrated: true });
+
+    const freeze = checkAndApplyStreakFreeze(loaded);
+    let data = freeze.data;
+    if (freeze.result.usedForDate) {
+      useToastStore.getState().push({
+        title: "Streak freeze used",
+        description: `Freeze used for ${freeze.result.usedForDate} — ${freeze.result.freezesLeft} left this month.`,
+        icon: "freeze",
+      });
+    }
+
+    data = applyEarnedBadges(data);
+
+    if (data !== loaded) saveNow(data);
+    set({ data, hydrated: true });
   },
 
   cycleStatus: (id) => {
@@ -89,10 +127,12 @@ export const useProgressStore = create<ProgressStoreState>((set, get) => ({
         attempts: becameSolved ? current.attempts + 1 : current.attempts,
         lastSolvedAt: becameSolved ? new Date().toISOString() : current.lastSolvedAt,
       };
-      const data = {
+      let data = {
         ...state.data,
         questions: { ...state.data.questions, [id]: updated },
       };
+      data = markActive(data);
+      data = applyEarnedBadges(data);
       saveNow(data);
       return { data };
     });
@@ -102,10 +142,10 @@ export const useProgressStore = create<ProgressStoreState>((set, get) => ({
     set((state) => {
       const current = getOrDefaultQuestion(state.data, id);
       const updated: QuestionProgress = { ...current, starred: !current.starred };
-      const data = {
+      const data = markActive({
         ...state.data,
         questions: { ...state.data.questions, [id]: updated },
-      };
+      });
       saveNow(data);
       return { data };
     });
@@ -126,11 +166,19 @@ export const useProgressStore = create<ProgressStoreState>((set, get) => ({
 
   setDayNote: (day, note) => {
     set((state) => {
-      const data = {
+      const data = markActive({
         ...state.data,
         dayNotes: { ...state.data.dayNotes, [String(day)]: note },
-      };
+      });
       scheduleSave(data);
+      return { data };
+    });
+  },
+
+  setReminderEmail: (email) => {
+    set((state) => {
+      const data = { ...state.data, reminderEmail: email };
+      saveNow(data);
       return { data };
     });
   },

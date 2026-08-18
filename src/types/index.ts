@@ -54,4 +54,14 @@ export interface ProgressData {
   questions: Record<string, QuestionProgress>;
   dayNotes: Record<string, string>;
   extraQuestions: Record<string, Question[]>;
+  /** ISO date (first hydrate ever) — anchors the streak-freeze earn schedule. */
+  trackerStartedAt: string;
+  /** `YYYY-MM-DD` (local) -> true, written whenever cycleStatus/setDayNote/toggleStar fires. */
+  activityLog: Record<string, true>;
+  /** ISO dates (local `YYYY-MM-DD`) a streak freeze was auto-consumed to bridge a missed day. */
+  streakFreezesUsedAt: string[];
+  /** badge id -> ISO date first earned. */
+  earnedBadges: Record<string, string>;
+  /** Reminder email, set from Settings. Never written to plan.json / Git. */
+  reminderEmail: string;
 }

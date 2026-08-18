@@ -1,10 +1,12 @@
 "use client";
 
-import { Flame } from "lucide-react";
+import Link from "next/link";
+import { Flame, Snowflake, Trophy } from "lucide-react";
 import { plan } from "@/lib/plan";
 import { useProgressStore } from "@/store/useProgressStore";
 import { displayedQuestionsForDay, isSolvedStatus } from "@/lib/merge";
-import { currentStreak } from "@/lib/streak";
+import { currentStreak, freezesAvailable } from "@/lib/streak";
+import { BADGES } from "@/lib/badges";
 import { ProgressBar } from "./ProgressBar";
 
 export function GlobalProgress() {
@@ -23,6 +25,8 @@ export function GlobalProgress() {
   }
 
   const streak = currentStreak(progress);
+  const freezes = freezesAvailable(progress);
+  const earnedCount = Object.keys(progress.earnedBadges ?? {}).length;
 
   return (
     <div className="rounded-xl border border-card-border bg-card p-4">
@@ -38,6 +42,17 @@ export function GlobalProgress() {
               <Flame size={14} /> {streak} day streak
             </span>
           )}
+          {freezes > 0 && (
+            <span
+              className="flex items-center gap-1 font-medium text-sky-600 dark:text-sky-400"
+              title={`${freezes} streak freeze${freezes === 1 ? "" : "s"} available this month`}
+            >
+              <Snowflake size={14} /> {freezes}
+            </span>
+          )}
+          <Link href="/badges" className="flex items-center gap-1 hover:text-foreground">
+            <Trophy size={14} /> {earnedCount} / {BADGES.length}
+          </Link>
         </div>
       </div>
       <ProgressBar solved={solved} total={total} />

@@ -56,8 +56,20 @@ localStorage `dsa-tracker:progress:v1` — progress:
   questions: { [id]: { status, starred, attempts, lastSolvedAt, note,
                        linkOverride, titleOverride, difficultyOverride, patternOverride } },
   dayNotes:  { [day]: markdown },
-  extraQuestions: { [day]: Question[] } }
+  extraQuestions: { [day]: Question[] },
+  trackerStartedAt: isoDate,
+  activityLog: { [localDateKey]: true },
+  streakFreezesUsedAt: isoDate[],
+  earnedBadges: { [badgeId]: isoDate },
+  reminderEmail: string }
 ```
+
+Streak/freeze/badge logic lives in `src/lib/streak.ts` and `src/lib/badges.ts`. `activityLog` and
+`earnedBadges` are written from `src/store/useProgressStore.ts` (`markActive` on
+cycleStatus/setDayNote/toggleStar, `applyEarnedBadges` after cycleStatus and on hydrate) —
+`streakFreezesAvailable` is deliberately **not** a stored field; it's always derived from
+`trackerStartedAt` and `streakFreezesUsedAt.length` via `freezesAvailable()`, since persisting a
+counter that has to be kept in sync by hand is exactly the kind of thing that desyncs.
 
 `status` — `unsolved | solved-clean | solved-with-hint | solved-with-editorial`.
 
