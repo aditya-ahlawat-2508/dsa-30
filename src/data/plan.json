@@ -1,106 +1,150 @@
 {
   "schemaVersion": 1,
-  "title": "30-Day DSA Revision",
+  "title": "100Q 10-Day DSA Sprint",
   "startDate": "",
-  "questionsPerDay": 8,
+  "questionsPerDay": 10,
   "days": [
     {
       "day": 1,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP Foundations",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d01-q01",
-          "title": "Minimum Total Cost To Process All Elements",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Adjacent Increasing Subarrays Detection II",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/",
+            "primary": "https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q02",
-          "title": "Filter Occupied Intervals",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Largest Area of Square Inside Two Rectangles",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/filter-occupied-intervals",
+            "primary": "https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q03",
-          "title": "Minimum Lights To Illuminate A Road",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Subarrays With GCD Equal to K",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/minimum-lights-to-illuminate-a-road",
+            "primary": "https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q04",
-          "title": "Minimum Energy To Maintain Brightness",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Lattice Points Inside a Circle",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/minimum-energy-to-maintain-brightness",
+            "primary": "https://leetcode.com/problems/count-lattice-points-inside-a-circle/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q05",
-          "title": "Count Kth Roots In A Range",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "K-th Largest Perfect Subtree Size in Binary Tree",
+          "difficulty": "Medium",
+          "pattern": "Tree",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/count-k-th-roots-in-a-range/",
+            "primary": "https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q06",
-          "title": "Sort Vowels By Frequency",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Longest Uploaded Prefix",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/sort-vowels-by-frequency/description/",
+            "primary": "https://leetcode.com/problems/longest-uploaded-prefix/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q07",
-          "title": "Integers With Multiple Sum Of Two Cubes",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Make Median of Array Equal to K",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/description/",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d01-q08",
-          "title": "Design Event Manager",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "https://leetcode.com/problems/design-event-manager",
+            "primary": "https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d01-q09",
+          "title": "Partition String Into Substrings With Values at Most K",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d01-q10",
+          "title": "Construct the Longest New String",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/construct-the-longest-new-string/",
             "editorial": "",
             "video": ""
           }
@@ -109,101 +153,145 @@
     },
     {
       "day": 2,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP Foundations",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d02-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Apply Bitwise Operations to Make Strings Equal",
+          "difficulty": "Medium",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Word Squares II",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/word-squares-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Valid Word Occurrences",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-valid-word-occurrences/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Mark Elements on Array by Performing Queries",
+          "difficulty": "Medium",
+          "pattern": "Queries",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Score by Changing Two Elements",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Range Product Queries of Powers",
+          "difficulty": "Medium",
+          "pattern": "Queries",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/range-product-queries-of-powers/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimize Result by Adding Parentheses to Expression",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d02-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find a Safe Walk Through a Grid",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d02-q09",
+          "title": "Count Number of Ways to Place Houses",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/count-number-of-ways-to-place-houses/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d02-q10",
+          "title": "House Robber V",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/house-robber-v/",
             "editorial": "",
             "video": ""
           }
@@ -212,101 +300,145 @@
     },
     {
       "day": 3,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph Basics",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d03-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Relocate Marbles",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/relocate-marbles/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Design an ATM Machine",
+          "difficulty": "Medium",
+          "pattern": "Simulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/design-an-atm-machine/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Integer Added to Array II",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-integer-added-to-array-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Make Array Equal II",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Bitwise XOR of All Pairings",
+          "difficulty": "Medium",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/bitwise-xor-of-all-pairings/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Number of Bad Pairs",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-number-of-bad-pairs/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Task Scheduler II",
+          "difficulty": "Medium",
+          "pattern": "Simulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/task-scheduler-ii/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d03-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Happy Students",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/happy-students/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d03-q09",
+          "title": "Maximum Number of Moves in a Grid",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d03-q10",
+          "title": "Count Ways to Group Overlapping Ranges",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/",
             "editorial": "",
             "video": ""
           }
@@ -315,101 +447,145 @@
     },
     {
       "day": 4,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph Basics",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d04-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Caesar Cipher Pairs",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-caesar-cipher-pairs/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Make Array Modulo Alternating I",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Shortest Uncommon Substring in an Array",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Largest Palindromic Number",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/largest-palindromic-number/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Reward Top K Students",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/reward-top-k-students/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Beauty of an Array After Applying Operation",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Discards to Balance Inventory",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-discards-to-balance-inventory/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d04-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Number of Operations to Sort a Binary Tree by Level",
+          "difficulty": "Medium",
+          "pattern": "Tree",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d04-q09",
+          "title": "Minimum Cost Path with Alternating Directions II",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d04-q10",
+          "title": "Minimize Maximum Component Cost",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimize-maximum-component-cost/",
             "editorial": "",
             "video": ""
           }
@@ -418,101 +594,145 @@
     },
     {
       "day": 5,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Trees & DP",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d05-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Deletions to Make Array Divisible",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Time to Complete Trips",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-time-to-complete-trips/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Construct Smallest Number From DI String",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/construct-smallest-number-from-di-string/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Largest Combination With Bitwise AND Greater Than Zero",
+          "difficulty": "Medium",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Identify the Largest Outlier in an Array",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Sum of Digit Differences of All Pairs",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Candies Allocated to K Children",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d05-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Create Binary Tree From Descriptions",
+          "difficulty": "Medium",
+          "pattern": "Tree",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d05-q09",
+          "title": "Minimum Cost for Cutting Cake I",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d05-q10",
+          "title": "Minimum Operations to Make Binary Palindrome",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/",
             "editorial": "",
             "video": ""
           }
@@ -521,101 +741,145 @@
     },
     {
       "day": 6,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Trees & DP",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d06-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Design Exam Scores Tracker",
+          "difficulty": "Medium",
+          "pattern": "Simulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/design-exam-scores-tracker/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Remove Letter To Equalize Frequency",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/remove-letter-to-equalize-frequency/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Split Array With Minimum Difference",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/split-array-with-minimum-difference/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Reduce an Integer to 0",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Closest Prime Numbers in Range",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/closest-prime-numbers-in-range/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimize Array Sum Using Divisible Replacements",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Query Kth Smallest Trimmed Number",
+          "difficulty": "Medium",
+          "pattern": "Queries",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/query-kth-smallest-trimmed-number/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d06-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Ways to Select Buildings",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/number-of-ways-to-select-buildings/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d06-q09",
+          "title": "Minimum Path Cost in a Grid",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/minimum-path-cost-in-a-grid/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d06-q10",
+          "title": "Path Existence Queries in a Graph I",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/path-existence-queries-in-a-graph-i/",
             "editorial": "",
             "video": ""
           }
@@ -624,101 +888,145 @@
     },
     {
       "day": 7,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph & Trees",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d07-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Longest Common Prefix Between Adjacent Strings After Removals",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count the Number of Houses at a Certain Distance I",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Append K Integers With Minimal Sum",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/append-k-integers-with-minimal-sum/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Time to Revert Word to Initial State I",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Almost Equal Pairs I",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-almost-equal-pairs-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Make Array Non Decreasing",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Number of Unique XOR Triplets I",
+          "difficulty": "Medium",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d07-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Length of the Longest Subsequence That Sums to Target",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d07-q09",
+          "title": "Find Maximum Balanced XOR Subarray Length",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/find-maximum-balanced-xor-subarray-length/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d07-q10",
+          "title": "Mice and Cheese",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/mice-and-cheese/",
             "editorial": "",
             "video": ""
           }
@@ -727,101 +1035,145 @@
     },
     {
       "day": 8,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + Graph & Trees",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d08-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Collisions of Monkeys on a Polygon",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find Score of an Array After Marking All Elements",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Absolute Distance Between Mirror Pairs",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Submatrices With Equal Frequency of X and Y",
+          "difficulty": "Medium",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximize Area of Square Hole in Grid",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Punishment Number of an Integer",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-punishment-number-of-an-integer/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum XOR After Operations",
+          "difficulty": "Medium",
+          "pattern": "Bit Manipulation",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-xor-after-operations/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d08-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Maximum Length of Valid Subsequence I",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d08-q09",
+          "title": "Multi Source Flood Fill",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/multi-source-flood-fill/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d08-q10",
+          "title": "Cousins in Binary Tree II",
+          "difficulty": "Medium",
+          "pattern": "Tree",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/cousins-in-binary-tree-ii/",
             "editorial": "",
             "video": ""
           }
@@ -830,101 +1182,145 @@
     },
     {
       "day": 9,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP/Graph/Trees Revision",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d09-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Addition to Make Integer Beautiful",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Construct String With Repeat Limit",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/construct-string-with-repeat-limit/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Lines to Represent a Line Chart",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Product After K Increments",
+          "difficulty": "Medium",
+          "pattern": "Math",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-product-after-k-increments/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Number of Distinct Elements After Operations",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Length of the Longest Common Prefix",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Operations to Write the Letter Y on a Grid",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d09-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Score of a Path Between Two Cities",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d09-q09",
+          "title": "Maximum Star Sum of a Graph",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/maximum-star-sum-of-a-graph/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d09-q10",
+          "title": "Maximum Multiplication Score",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/maximum-multiplication-score/",
             "editorial": "",
             "video": ""
           }
@@ -933,101 +1329,145 @@
     },
     {
       "day": 10,
-      "topic": "",
-      "goal": "",
+      "topic": "Mixed + DP/Graph/Trees Revision",
+      "goal": "7 mixed + 3 DP/Graph/Tree",
       "questions": [
         {
           "id": "d10-q01",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Move Pieces to Obtain a String",
+          "difficulty": "Medium",
+          "pattern": "String",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/move-pieces-to-obtain-a-string/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q02",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q03",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find All Good Indices",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-all-good-indices/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q04",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Find the Smallest Balanced Index",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/find-the-smallest-balanced-index/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q05",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Maximum Points Inside the Square",
+          "difficulty": "Medium",
+          "pattern": "Greedy",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/maximum-points-inside-the-square/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q06",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Finish Time of Tasks I",
+          "difficulty": "Medium",
+          "pattern": "Array",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/finish-time-of-tasks-i/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q07",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Closest Equal Element Queries",
+          "difficulty": "Medium",
+          "pattern": "Queries",
+          "tags": [
+            "mixed"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/closest-equal-element-queries/",
             "editorial": "",
             "video": ""
           }
         },
         {
           "id": "d10-q08",
-          "title": "",
-          "difficulty": "",
-          "pattern": "",
-          "tags": [],
+          "title": "Count Ways To Build Good Strings",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
           "links": {
-            "primary": "",
+            "primary": "https://leetcode.com/problems/count-ways-to-build-good-strings/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d10-q09",
+          "title": "Count the Number of Beautiful Subarrays",
+          "difficulty": "Medium",
+          "pattern": "DP",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/",
+            "editorial": "",
+            "video": ""
+          }
+        },
+        {
+          "id": "d10-q10",
+          "title": "Power Grid Maintenance",
+          "difficulty": "Medium",
+          "pattern": "Graph",
+          "tags": [
+            "dp-graph-tree"
+          ],
+          "links": {
+            "primary": "https://leetcode.com/problems/power-grid-maintenance/",
             "editorial": "",
             "video": ""
           }

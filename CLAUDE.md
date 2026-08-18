@@ -1,26 +1,32 @@
 # dsa-30
 
-A personal, single-user, offline-first 30-day DSA revision tracker. 30 day-cards on a home grid;
-each day holds exactly 8 question slots plus a markdown notes pad.
+A personal, single-user, offline-first 30-day DSA revision tracker. 30 day-cards on a home grid.
+Slot count per day is **not uniform**: days 1–10 hold 10 question slots (a 100-question sprint),
+days 11–30 hold the original 8 slots each — 260 slots total. Each day also has a markdown notes
+pad. Slot count for a given day is read from `plan.days[day].questions.length`, never from a
+single global constant — no component or script may assume every day has the same number of slots.
 
 ## Non-negotiables
 
 These are the rules that break the app if violated. Check every change against them.
 
-1. **Never invent DSA questions.** All 240 question titles, links, difficulties, topic labels and
-   patterns are supplied by the user. Slots ship empty. Do not populate a slot with an example,
-   do not propose a curriculum, do not "helpfully" fill a blank with Two Sum. An empty slot is
-   the correct state.
-2. **Question IDs are pre-allocated and immutable.** `d01-q01` … `d30-q08`, zero-padded, all 240
-   generated at scaffold time. Never derive an ID from array position. Never renumber.
+1. **Never invent DSA questions.** All question titles, links, difficulties, topic labels and
+   patterns are supplied by the user (or extracted verbatim from user-supplied source material,
+   e.g. screenshots of a real problem list). Slots ship empty until then. Do not populate a slot
+   with an example, do not propose a curriculum, do not "helpfully" fill a blank with Two Sum.
+   An empty slot is the correct state.
+2. **Question IDs are pre-allocated and immutable.** `d01-q01` … `d10-q10` for days 1–10, `d11-q01`
+   … `d30-q08` for days 11–30, zero-padded. Never derive an ID from array position. Never renumber.
+   Per-day slot count comes from `scripts/lib/csv-columns.mjs`'s `slotsForDay(day)` helper — update
+   it (and only it) if the per-day slot count ever needs to change again.
 3. **Two files, two lifetimes.** `src/data/plan.json` is the syllabus (Git, read-only at
    runtime). localStorage `dsa-tracker:progress:v1` is progress. Progress fields must never be
    written into `plan.json`, and syllabus content must never be the only copy of something the
    user typed in-app.
 4. **An empty slot is a first-class UI state**, not a blank row and not an error. It renders as a
    labelled dashed row with an add affordance. Status and star controls are disabled on it.
-5. **Day notes work on unplanned days.** The notes pad is enabled even when all 8 slots are
-   empty — the user writes concept notes before choosing questions.
+5. **Day notes work on unplanned days.** The notes pad is enabled even when all of a day's slots
+   are empty — the user writes concept notes before choosing questions.
 6. **No `localStorage` access during render.** Read in an effect, show a skeleton until hydrated.
    Reading during SSR/first render causes a hydration mismatch and React throws.
 
@@ -29,10 +35,14 @@ These are the rules that break the app if violated. Check every change against t
 `src/data/plan.json` — syllabus:
 
 ```
-{ schemaVersion, title, startDate, questionsPerDay: 8,
+{ schemaVersion, title, startDate, questionsPerDay,
   days: [ { day, topic, goal,
             questions: [ { id, title, difficulty, pattern, tags, links: {primary, editorial, video} } ] } ] }
 ```
+
+`questionsPerDay` is informational only (no component reads it) — actual slot count per day is
+`days[i].questions.length`, which varies (10 for days 1–10, 8 for days 11–30). Do not reintroduce
+a hardcoded assumption that every day has the same slot count.
 
 A slot is empty iff `title === ""`. `difficulty` is `Easy | Medium | Hard | ""`.
 
@@ -49,8 +59,8 @@ localStorage `dsa-tracker:progress:v1` — progress:
 `status` — `unsolved | solved-clean | solved-with-hint | solved-with-editorial`.
 
 The `*Override` fields let the user fill or fix a slot from inside the app without touching the
-repo. `extraQuestions` is overflow past 8; IDs use a `c` prefix (`d01-c01`) so they can never
-collide with the fixed 240.
+repo. `extraQuestions` is overflow past a day's fixed slot count; IDs use a `c` prefix (`d01-c01`)
+so they can never collide with the pre-allocated slots.
 
 Merge at render time, by `id`:
 

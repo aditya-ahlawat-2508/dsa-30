@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { CSV_COLUMNS, parseCsvLine } from "./lib/csv-columns.mjs";
+import { CSV_COLUMNS, parseCsvLine, slotsForDay } from "./lib/csv-columns.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const planPath = join(__dirname, "..", "src", "data", "plan.json");
@@ -13,7 +13,6 @@ if (!csvPath) {
 }
 
 const DAYS = 30;
-const SLOTS_PER_DAY = 8;
 const VALID_DIFFICULTIES = new Set(["Easy", "Medium", "Hard", ""]);
 
 const SLUG_WORD_OVERRIDES = {
@@ -47,7 +46,7 @@ function emptyPlan() {
   const days = [];
   for (let day = 1; day <= DAYS; day++) {
     const questions = [];
-    for (let slot = 1; slot <= SLOTS_PER_DAY; slot++) {
+    for (let slot = 1; slot <= slotsForDay(day); slot++) {
       questions.push(emptyQuestion(day, slot));
     }
     days.push({ day, topic: "", goal: "", questions });
@@ -56,7 +55,7 @@ function emptyPlan() {
     schemaVersion: 1,
     title: "30-Day DSA Revision",
     startDate: "",
-    questionsPerDay: SLOTS_PER_DAY,
+    questionsPerDay: 8,
     days,
   };
 }
@@ -118,8 +117,9 @@ for (const { lineNumber, fields } of rows) {
   if (!Number.isInteger(day) || day < 1 || day > DAYS) {
     fail(`line ${lineNumber}: day "${dayRaw}" out of range (must be 1-${DAYS})`);
   }
-  if (!Number.isInteger(slot) || slot < 1 || slot > SLOTS_PER_DAY) {
-    fail(`line ${lineNumber}: slot "${slotRaw}" out of range (must be 1-${SLOTS_PER_DAY})`);
+  const maxSlot = slotsForDay(day);
+  if (!Number.isInteger(slot) || slot < 1 || slot > maxSlot) {
+    fail(`line ${lineNumber}: slot "${slotRaw}" out of range (must be 1-${maxSlot})`);
   }
 
   const key = `${day}-${slot}`;
